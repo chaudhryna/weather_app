@@ -22,7 +22,7 @@ DEBUG = False
 SECRET_KEY = env('SECRET_KEY')
 
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = ['https://weather-app-nac.herokuapp.com', '127.0.0.1']
 
 
 INSTALLED_APPS = [
