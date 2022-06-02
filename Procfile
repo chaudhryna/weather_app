@@ -1,1 +1,2 @@
-web: gunicorn weather_app:app --log-file=-
+web: gunicorn weather_app.wsgi
+release: python manage.py migrate
