@@ -20,7 +20,7 @@ environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 SECRET_KEY = env('SECRET_KEY')
 
 
-ALLOWED_HOSTS = ['https://git.heroku.com/weather-app-nac.git', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['weather-app-nac.herokuapp.com/', '127.0.0.1', 'localhost']
 
 
 INSTALLED_APPS = [
