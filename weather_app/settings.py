@@ -6,7 +6,7 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
-# DEBUG = env('DEBUG')
+DEBUG = False
 
 environ.Env.read_env()
 
@@ -17,12 +17,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
-DEBUG = False
-
 SECRET_KEY = env('SECRET_KEY')
 
 
-ALLOWED_HOSTS = ['https://weather-app-nac.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['https://git.heroku.com/weather-app-nac.git', '127.0.0.1', 'localhost']
 
 
 INSTALLED_APPS = [
